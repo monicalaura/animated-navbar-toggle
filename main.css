@@ -1,0 +1,116 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{
+	min-height:100vh;
+	justify-content:center; 
+	align-items: center;
+	background:url("back.jpg") center/cover no-repeat;
+	width:100%;
+   
+	
+	
+}
+
+.navbar__header{
+	
+	background:#21262c;
+	display:flex;
+	justify-content:space-between;
+	padding: 0.5rem 1rem;
+	border-bottom:0.1rem solid #9da5b0;
+}
+
+.navbar__btn{
+	border:5px solid #9da5b0;
+	align-self:center;
+	cursor:pointer;
+}
+
+h1{
+	color:#9da5b0;
+	margin-top:15px;
+	font-weight:500;
+	font-family:Helvetica, sans-serif;
+}
+
+.bar1,.bar2,.bar3{
+	
+	width:30px;
+	height:5px;
+	margin:0.5rem;
+	background:#9da5b0;
+	transition:all 2s ease;
+	
+}
+
+.changeBtn .bar1{
+   -webkit-transform: rotate(-45deg); 
+   -webkit-transform:translate(-10px 10px);   
+   -ms-transform: rotate(-45deg);
+   -ms-transform:translate(-10px 10px);
+   -moz-transform: rotate(-45deg);
+   -moz-transform:translate(-10px 10px);
+   transform: rotate(-45deg);  
+   transform:translate(-10px 10px); 
+	
+}
+
+.changeBtn .bar2{
+	opacity:0;
+	
+}
+
+.changeBtn .bar3{
+	-webkit-transform:rotate(45deg);
+	-webkit-transform:translate(-7px -8px);
+    -ms-transform: rotate(45deg);
+	 -ms-transform:translate(-7px -8px);
+	-moz-transform: rotate(45deg);
+	-moz-transform:translate(-7px -8px);
+     transform: rotate(45deg);
+     transform:translate(-7px -8px);	 
+	
+}
+
+.navbar__links{
+	list-style-type:none;
+	transition:all 2s ease;
+	/* for TOGGLE */
+	height:0;
+	overflow:hidden;
+	
+}
+
+.navbar__collapse{
+	height:250px;
+}
+
+
+
+.navbar__single-link{
+	display:block;
+	background:#46515d;
+	padding:0.7rem;
+	font-size:1.1rem;
+	text-decoration:none;
+	text-transform:capitalize;
+	color:#9da5b0;
+	transition:all 1s ease;
+	cursor:pointer;
+	
+}
+
+
+.navbar__single-link:hover{
+	padding-left:1.2rem;
+	background:#4c5f76;
+}
+
+.fas, .fab {
+	
+	padding-right:5px;
+}
